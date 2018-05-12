@@ -58,6 +58,7 @@ At the reverting part, conflicts might happen.
 The second method is
 ### git reset
 By doing `git reset --hard <commitID>`, git actually go back to the commit specified by its id and delete all the commits in front. 
+
 ![alt_text](./assets/reset_hard.png)
 
 
