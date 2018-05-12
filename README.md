@@ -5,11 +5,11 @@ This is just a repo where I create bugs, conflicts on purpose to learn git comma
 When the base of the checked-out branch is the latest master and you merge the branch to master, git will do something called fast-forword to move the head pointer of master to current head of checked-out branch. It's not an actual commit.
 So in order to merge 2 branches and preserve the status of the checked-out branch on the graph, you can do:
 ```
-git merge --no-ff master
+git merge --no-ff
 ```
 or 
 ```
-git pull --no-ff master
+git pull --no-ff
 ```
 The graph will look like
 ![alt_text](./no_ff.png)
