@@ -12,14 +12,14 @@ or
 git pull --no-ff
 ```
 The graph will look like
-![alt_text](./no_ff.png)
+![alt_text](./assets/no_ff.png)
 
 
 
 ### git rebase 
 Git will rewrite history by moving the entire new branch to the tip of the master branch. It actually create a new commit for each of the commits in the previous branch.
 For example, before rebasing, the network graph look something like
-![alt text](./before_rebase.png)
+![alt text](./assets/before_rebase.png)
 
 Then do the rebasing by
 ```
@@ -28,7 +28,7 @@ git rebase master
 ```
 
 The graph will be like
-![all_text](./after_rebase.png)
+![alt_text](./assets/after_rebase.png)
 
 
 `git rebase` can also allow you to modify previous n commits by interactive rebase with a number of provided options:
@@ -45,7 +45,7 @@ There are 2 ways to get them back
 
 ### git revert
 The picture here depicts how `git revert` works:
-![alt_text](./revert.png) 
+![alt_text](./assets/revert.png) 
 
 Here you want to go back to the state at the commit C2. What you need to do is actualy back to the commit C3 and revert what you have changed there. So revert here is quite self-explanatory.
 You will do 
@@ -58,6 +58,7 @@ At the reverting part, conflicts might happen.
 The second method is
 ### git reset
 By doing `git reset --hard <commitID>`, git actually go back to the commit specified by its id and delete all the commits in front. 
+![alt_text](./assets/reset_hard.png)
 
 
 
