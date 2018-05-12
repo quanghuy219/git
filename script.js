@@ -8,6 +8,7 @@ $(document).ready( function() {
 
     $("#getData").click( function() {
         var htmlString = $("#editor").summernote('code');
+        
         $("#display").html(htmlString);
     })
 });
