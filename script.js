@@ -1,6 +1,6 @@
 $(document).ready( function() {
     $("#editor").summernote({
-        placeholder: 'Hello bootstrap 4',
+        placeholder: 'Create your article',
         tabsize: 2,
         height: 500,
         focus: true,
