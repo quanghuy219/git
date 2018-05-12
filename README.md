@@ -62,4 +62,20 @@ By doing `git reset --hard <commitID>`, git actually go back to the commit speci
 ![alt_text](./assets/reset_hard.png)
 
 
+### git cherry-pick
+
+In contrast with `merge` or `rebase` which normally apply numerous commits onto other branch, cherry-pick will choose a commit and then apply it onto other branch.
+1. Make sure you checkout to the destination branch
+```
+git checkout <destination_branch>
+```  
+2. Cherry pick a commit speficied by its hash to other branch
+````
+git cherry-pick <commit_hash>
+```
+
+Visit [docs](https://git-scm.com/docs/git-cherry-pick) for more options and details.
+
+
+
 
