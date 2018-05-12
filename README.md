@@ -71,7 +71,7 @@ git checkout <destination_branch>
 ```  
 2. Cherry pick a commit speficied by its hash to other branch
 
-````
+```
 git cherry-pick <commit_hash>
 ```
 
